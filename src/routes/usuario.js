@@ -16,7 +16,6 @@ router.post(
     '/',
     [
         check('nombre','El nombre es requerido').notEmpty(),
-        check('apellido','El apellido es requerido').notEmpty(),
         check('email','El  email es requerido').isEmail(),
         check('password','El password es requerido').notEmpty()
         .isLength({min:6})
